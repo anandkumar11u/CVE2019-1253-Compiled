@@ -1,14 +1,5 @@
 ## CVE2019-1253-Compiled
 Windows AppX Deployment -  Windows Elevation of Privilege Vulnerability
-```
-The “wsappx” process is part of Windows 8 and 10, and you may see it running in the background and it’s related to the Windows Store and Microsoft’s new “Universal” app platform. if you see the wsappx process running in your Task Manager, expand it and you’ll see one or both of the two subservices running (depending on which version of Windows you’re using). These services handle installing, removing, and updating Store apps.
-
-In other words, this process is used for installing, uninstalling, and updating Store apps. Windows automatically updates Store apps in the background, and many of the apps included with Windows.
-
-Note:An attacker can exploit this issue to gain the elevated privileges on the system.
-```
-## Tested on 
-![Screenshot](test.png?raw=true)
 
 ## How to Replicate this attack
 So, Here is the Way ..!!
@@ -29,9 +20,9 @@ If not, launch Edge for the first time to create that directory.
 9. Exploit it using AppxExploit.exe "C:\Windows\win.ini"
 ```
 ## Source Code of the Exploit can be found here
-
+```
 https://github.com/padovah4ck/CVE-2019-1253
-
+```
 
 ## Screenshoot includes here
 ## Before
@@ -74,31 +65,8 @@ Use /D when you want to create a soft link pointing to a directory.
 Use /H when you want to create a hard link pointing to a file:
 Use /J to create a hard link pointing to a directory, also known as a directory junction:
 ```
-## Technologies Affected
-
-    Microsoft Windows 10 Version 1709 for ARM64-based Systems
-    Microsoft Windows 10 Version 1803 for 32-bit Systems
-    Microsoft Windows 10 Version 1803 for ARM64-based Systems
-    Microsoft Windows 10 Version 1803 for x64-based Systems
-    Microsoft Windows 10 Version 1809 for 32-bit Systems
-    Microsoft Windows 10 Version 1809 for ARM64-based Systems
-    Microsoft Windows 10 Version 1809 for x64-based Systems
-    Microsoft Windows 10 Version 1903 for 32-bit Systems
-    Microsoft Windows 10 Version 1903 for ARM64-based Systems
-    Microsoft Windows 10 Version 1903 for x64-based Systems
-    Microsoft Windows 10 version 1703 for 32-bit Systems
-    Microsoft Windows 10 version 1703 for x64-based Systems
-    Microsoft Windows 10 version 1709 for 32-bit Systems
-    Microsoft Windows 10 version 1709 for x64-based Systems
-    Microsoft Windows Server 1803
-    Microsoft Windows Server 1903
-    Microsoft Windows Server 2019
-
 
 ## References
 https://github.com/padovah4ck/CVE-2019-1253
 
 https://krbtgt.pw/dacl-permissions-overwrite-privilege-escalation-cve-2019-0841/
-
-https://www.symantec.com/security-center/vulnerabilities/writeup/109913?om_rssid=sr-advisories
-
